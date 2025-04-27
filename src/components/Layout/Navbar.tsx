@@ -3,14 +3,15 @@ import React from 'react';
 import { Bell, Search, User } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
     <div className="flex items-center justify-between w-full py-3 px-4 bg-white dark:bg-card border-b border-border">
       <div className="flex items-center gap-2">
-        <div className="font-bold text-xl text-trendspotter-dark-blue dark:text-trendspotter-pale-blue">
+        <Link to="/" className="font-bold text-xl text-trendspotter-dark-blue dark:text-trendspotter-pale-blue">
           TrendSpotter<span className="text-trendspotter-light-blue">Invest</span>
-        </div>
+        </Link>
       </div>
       
       <div className="hidden md:flex max-w-md w-full mx-4 relative">
